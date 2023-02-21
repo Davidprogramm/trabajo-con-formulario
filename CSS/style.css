@@ -1,0 +1,219 @@
+:root{
+    --blanco:#ffffff;
+    --azul:#2196f3;
+    --gris:#e1e1e1;    
+    --negro:#000000;
+    --heading:'Amaranth', sans-serif;
+    --Parrafo:'Gentium Book Basic', serif;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    background-image: linear-gradient(to top, var(--gris) 0%, var(--blanco) 100%);
+}
+/*GLOBALES*/
+
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3.5rem;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    background-size: cover;
+}
+h1,h2,h3{
+    font-family: var(--heading);
+    line-height: 1.2;
+    font-weight: 400;
+}
+h2,a{
+    color: var(--blanco);
+}
+a:hover{
+    background-color: #b1a7e9;
+}
+
+/*personaliced styles*/
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.centrado{
+    margin:0 auto;
+}
+.texto-centrado{
+    text-align: center;
+}
+.mayuscula{
+    text-transform: uppercase;
+}
+/*HEADER ADN fOOTER*/
+.logo{
+    align-items: center;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azul);
+    text-align: center;
+   
+}
+@media (min-width: 768px) {
+    .header{
+        display: flex;    
+        flex-direction: row;    
+        justify-content: space-between;
+        align-items: center;  
+        padding: 1rem;
+    } 
+}
+
+.barra{
+    margin: 0 3rem;
+}
+.logo__bold{
+    font-weight: 700;
+}
+.navegador{ 
+    display: flex;    
+    flex-direction: column;    
+    margin: 0 5rem;
+    font-family: var(--heading);
+    font-size:4rem ;
+    font-weight: 400;
+}
+@media (min-width: 768px) {
+    .navegador{
+        gap: 2rem;
+        display: flex;    
+        flex-direction: row; 
+        margin: 0;
+    }
+}
+.navegador__enlaces{
+    padding: 1rem;
+    text-transform: uppercase;
+}
+/*MAIN*/
+
+.principal{
+    width: 90%;
+    margin-bottom: 10rem;
+}
+.principal__titulo{
+    text-align: center;
+    margin: 4rem;
+}
+@media (min-width: 768px) {
+    .contenido{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 4rem;
+    }
+
+}
+
+.contenido__imagen{
+
+}
+.contenido__texto{
+    margin-top: 2rem;
+    font-family: var(--Parrafo);
+    font-size: 2.9rem;
+    line-height: 1;
+    color: var(--negro);
+    text-align: center;
+    justify-content: center;
+}
+.titulo{
+text-align: center;
+color: var(--negro);
+padding: 2rem;
+}
+@media (min-width: 768px) {
+    .secciones{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:2rem
+        } 
+}
+
+.secciones__articulos{
+    
+}
+.secciones__titulo{
+    text-align: center;
+    padding: 1rem 0;
+}
+.secciones__imagen{
+    width: 100%;
+    height: 20rem;
+}
+.secciones__texto{
+    font-family: var(--Parrafo);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.sombra {
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+/*Bicicleta*/
+.contenedor{
+    padding: 2rem;
+    border-bottom: 3px solid var(--gris);
+}
+.contenedor:last-of-type{
+    border: none;
+}
+@media (min-width: 768px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:3rem;
+        margin: 0 3rem;
+    }
+}
+
+.contenedor__imagen{
+    width: 90%;
+    height: 90%;
+    margin: 0 1rem;
+    
+}
+.contenedor__texto{
+    font-family: var(--Parrafo);
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+   
+}
+.contenedor--dos{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.titulo-1{
+    text-align: left;
+}
+.contenedor__texto--mitad{
+    margin-top: 6.5em;
+}
